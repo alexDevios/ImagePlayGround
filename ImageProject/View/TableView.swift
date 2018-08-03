@@ -6,7 +6,11 @@ class MyTableView: UITableViewController {
     let searchController = UISearchController(searchResultsController: nil) //UISearchController
     let networkManager = NetworkManager() //Класс NetworkManager для запросов
     var myViewModel = [ViewModel]() //ViewModel
-    var indexOfImage: Int! //Индекс выбранной картинки
+    var indexOfImage: Int! { //Индекс выбранной картинки
+        didSet {
+            self.performSegue(withIdentifier: "showImage", sender: nil)
+        }
+    }
     var mySingelton = Singelton.sharedInstance //сингтон
     
     //MARK: - viewDidLoad method
@@ -34,6 +38,13 @@ class MyTableView: UITableViewController {
             tableView.tableHeaderView = searchController.searchBar
         }
     }
+    
+    //MARK: - prepareForSegue method
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if case let desVC as ImageView = segue.destination, segue.identifier == "showImage" {
+            desVC.imageUrl = myViewModel[indexOfImage].mainImageUrl
+        }
+    }
 }
 
 //MARK: - расширение таблицы с описанием методов UITableViewDelegate и UITableViewDataSource
@@ -53,6 +64,7 @@ extension MyTableView {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         //
+        indexOfImage = indexPath.row
     }
     
     //MARK: - инициализация ячейки с передачей данных

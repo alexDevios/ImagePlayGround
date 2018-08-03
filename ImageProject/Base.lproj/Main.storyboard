@@ -18,6 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <connections>
                             <outlet property="dataSource" destination="d9T-ce-xRS" id="kzJ-CK-6DE"/>
                             <outlet property="delegate" destination="d9T-ce-xRS" id="P04-8Z-zNN"/>
@@ -41,10 +42,31 @@
                     <view key="view" contentMode="scaleToFill" id="Xk8-3F-Knf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-oE-JVw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XzM-Gn-nbt">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XzM-Gn-nbt" firstAttribute="centerX" secondItem="Xk8-3F-Knf" secondAttribute="centerX" id="EAC-yN-cb6"/>
+                            <constraint firstItem="NLg-oE-JVw" firstAttribute="leading" secondItem="7Z2-Ub-BfF" secondAttribute="leading" id="J9U-zJ-ruU"/>
+                            <constraint firstItem="NLg-oE-JVw" firstAttribute="top" secondItem="Xk8-3F-Knf" secondAttribute="top" id="Odb-VA-s2u"/>
+                            <constraint firstItem="7Z2-Ub-BfF" firstAttribute="trailing" secondItem="NLg-oE-JVw" secondAttribute="trailing" id="cVr-rq-SND"/>
+                            <constraint firstItem="XzM-Gn-nbt" firstAttribute="centerY" secondItem="Xk8-3F-Knf" secondAttribute="centerY" id="gmw-r5-oVU"/>
+                            <constraint firstItem="7Z2-Ub-BfF" firstAttribute="bottom" secondItem="NLg-oE-JVw" secondAttribute="bottom" id="i02-Hz-Tcb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7Z2-Ub-BfF"/>
                     </view>
                     <navigationItem key="navigationItem" title="Image" largeTitleDisplayMode="never" id="QBi-90-CjQ"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="XzM-Gn-nbt" id="AVH-fZ-HFf"/>
+                        <outlet property="imageView" destination="NLg-oE-JVw" id="g5l-TH-Cao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aej-9Y-yb5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

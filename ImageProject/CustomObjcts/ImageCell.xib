@@ -24,14 +24,21 @@
                             <constraint firstAttribute="width" constant="300" id="KWm-hj-YSe"/>
                         </constraints>
                     </imageView>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="LrU-B5-dlb">
+                        <rect key="frame" x="169" y="71" width="37" height="37"/>
+                        <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="aJY-Da-UQE" secondAttribute="bottom" id="309-cS-Ib7"/>
                     <constraint firstItem="aJY-Da-UQE" firstAttribute="centerX" secondItem="k9a-sd-h9T" secondAttribute="centerX" id="HOS-4T-kWP"/>
+                    <constraint firstItem="LrU-B5-dlb" firstAttribute="centerX" secondItem="k9a-sd-h9T" secondAttribute="centerX" id="NrO-xu-THM"/>
                     <constraint firstItem="aJY-Da-UQE" firstAttribute="top" secondItem="k9a-sd-h9T" secondAttribute="top" id="QN4-dL-Rog"/>
+                    <constraint firstItem="LrU-B5-dlb" firstAttribute="centerY" secondItem="k9a-sd-h9T" secondAttribute="centerY" id="gWl-o5-smG"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="activityIndicator" destination="LrU-B5-dlb" id="3Qf-NB-Ir3"/>
                 <outlet property="customImageView" destination="aJY-Da-UQE" id="0HM-Nm-my4"/>
             </connections>
             <point key="canvasLocation" x="-44" y="-51"/>
