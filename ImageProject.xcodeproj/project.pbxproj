@@ -8,20 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		A88D8128211433B600675656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D8127211433B600675656 /* AppDelegate.swift */; };
-		A88D812A211433B600675656 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D8129211433B600675656 /* ViewController.swift */; };
+		A88D812A211433B600675656 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D8129211433B600675656 /* ImageView.swift */; };
 		A88D812D211433B600675656 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88D812B211433B600675656 /* Main.storyboard */; };
 		A88D812F211433B600675656 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88D812E211433B600675656 /* Assets.xcassets */; };
 		A88D8132211433B600675656 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A88D8130211433B600675656 /* LaunchScreen.storyboard */; };
+		A88D813B2114349900675656 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88D813A2114349900675656 /* Alamofire.framework */; };
+		A88D813D211434B400675656 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = A88D813A2114349900675656 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A88D8145211435DB00675656 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D8144211435DB00675656 /* ViewModel.swift */; };
+		A88D8147211435E800675656 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D8146211435E800675656 /* Model.swift */; };
+		A88D81492114360000675656 /* CustomImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D81482114360000675656 /* CustomImageCell.swift */; };
+		A88D814B2114361400675656 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D814A2114361400675656 /* TableView.swift */; };
+		A88D814D2114364B00675656 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D814C2114364B00675656 /* Protocols.swift */; };
+		A88D814F2114365C00675656 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D814E2114365C00675656 /* NetworkManager.swift */; };
+		A88D81512114366A00675656 /* SomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88D81502114366A00675656 /* SomeData.swift */; };
+		A88D81532114368000675656 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A88D81522114368000675656 /* ImageCell.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A88D813C211434A600675656 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A88D813D211434B400675656 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A88D8124211433B600675656 /* ImageProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88D8127211433B600675656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A88D8129211433B600675656 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A88D8129211433B600675656 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		A88D812C211433B600675656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A88D812E211433B600675656 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A88D8131211433B600675656 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A88D8133211433B600675656 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A88D813A2114349900675656 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		A88D8144211435DB00675656 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		A88D8146211435E800675656 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A88D81482114360000675656 /* CustomImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageCell.swift; sourceTree = "<group>"; };
+		A88D814A2114361400675656 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		A88D814C2114364B00675656 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		A88D814E2114365C00675656 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A88D81502114366A00675656 /* SomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeData.swift; sourceTree = "<group>"; };
+		A88D81522114368000675656 /* ImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88D813B2114349900675656 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +73,7 @@
 			children = (
 				A88D8126211433B600675656 /* ImageProject */,
 				A88D8125211433B600675656 /* Products */,
+				A88D81392114349900675656 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,70 @@
 		A88D8126211433B600675656 /* ImageProject */ = {
 			isa = PBXGroup;
 			children = (
-				A88D8127211433B600675656 /* AppDelegate.swift */,
-				A88D8129211433B600675656 /* ViewController.swift */,
+				A88D813E2114352C00675656 /* ViewModel */,
+				A88D81432114356100675656 /* CustomObjcts */,
+				A88D81422114355600675656 /* AdditionalData */,
+				A88D81412114354E00675656 /* View */,
+				A88D813F2114354000675656 /* Model */,
 				A88D812B211433B600675656 /* Main.storyboard */,
 				A88D812E211433B600675656 /* Assets.xcassets */,
 				A88D8130211433B600675656 /* LaunchScreen.storyboard */,
 				A88D8133211433B600675656 /* Info.plist */,
 			);
 			path = ImageProject;
+			sourceTree = "<group>";
+		};
+		A88D81392114349900675656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A88D813A2114349900675656 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A88D813E2114352C00675656 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A88D8144211435DB00675656 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A88D813F2114354000675656 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A88D8146211435E800675656 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A88D81412114354E00675656 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A88D81482114360000675656 /* CustomImageCell.swift */,
+				A88D814A2114361400675656 /* TableView.swift */,
+				A88D8129211433B600675656 /* ImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A88D81422114355600675656 /* AdditionalData */ = {
+			isa = PBXGroup;
+			children = (
+				A88D8127211433B600675656 /* AppDelegate.swift */,
+				A88D814C2114364B00675656 /* Protocols.swift */,
+				A88D814E2114365C00675656 /* NetworkManager.swift */,
+				A88D81502114366A00675656 /* SomeData.swift */,
+			);
+			path = AdditionalData;
+			sourceTree = "<group>";
+		};
+		A88D81432114356100675656 /* CustomObjcts */ = {
+			isa = PBXGroup;
+			children = (
+				A88D81522114368000675656 /* ImageCell.xib */,
+			);
+			path = CustomObjcts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +164,7 @@
 				A88D8120211433B600675656 /* Sources */,
 				A88D8121211433B600675656 /* Frameworks */,
 				A88D8122211433B600675656 /* Resources */,
+				A88D813C211434A600675656 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -123,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88D8132211433B600675656 /* LaunchScreen.storyboard in Resources */,
+				A88D81532114368000675656 /* ImageCell.xib in Resources */,
 				A88D812F211433B600675656 /* Assets.xcassets in Resources */,
 				A88D812D211433B600675656 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +227,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A88D812A211433B600675656 /* ViewController.swift in Sources */,
+				A88D81492114360000675656 /* CustomImageCell.swift in Sources */,
+				A88D814B2114361400675656 /* TableView.swift in Sources */,
+				A88D814D2114364B00675656 /* Protocols.swift in Sources */,
+				A88D812A211433B600675656 /* ImageView.swift in Sources */,
+				A88D814F2114365C00675656 /* NetworkManager.swift in Sources */,
+				A88D8145211435DB00675656 /* ViewModel.swift in Sources */,
 				A88D8128211433B600675656 /* AppDelegate.swift in Sources */,
+				A88D8147211435E800675656 /* Model.swift in Sources */,
+				A88D81512114366A00675656 /* SomeData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +381,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34N8JSJR7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ImageProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +404,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34N8JSJR7T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ImageProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
