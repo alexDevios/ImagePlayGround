@@ -35,7 +35,7 @@ class NetworkManager {
                     }
             }
         } else {
-            let alert = UIAlertController(title: "Warning!", message: "Check your internet!", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Warning!", message: "Check your internet connection", preferredStyle: .alert)
             let ok = UIAlertAction(title: "OK", style: .default)
             alert.addAction(ok)
             alert.present()

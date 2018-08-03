@@ -38,10 +38,12 @@ extension CGFloat {
 //MARK: - Расширение UIAlertController
 extension UIAlertController {
     func present() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        if let roorVC = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
-            if let currentVC = roorVC.visibleViewController {
-                currentVC.present(self, animated: false, completion: nil)
+        DispatchQueue.main.async {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+            if let roorVC = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+                if let currentVC = roorVC.visibleViewController {
+                    currentVC.present(self, animated: false, completion: nil)
+                }
             }
         }
     }
